@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./slider.css">
+</head>
+<body>
+    <img src="./Capture.jpeg" alt="" id="mainimage" width="10%">
+    <script type="text/javascript" >
+        var image1=document.getElementById("mainimage")
+        var imageArray=["./Capture.jpeg","./Capture2.jpeg","./Capture3.png","./Capture4.png","./Capture5.png","./Capture6.png","./Capture7.png"];
+        
+        var index=1
+       function change()
+       {
+           image1.setAttribute("src",imageArray[index])
+          index++;
+          console.log(index);
+          if(index==7)
+          {
+              index=0
+          }
+       }
+    </script>
+    </br></br>
+<button onclick="change()" id="a">Change color</button>    
+
+    
+</body>
+</html>
